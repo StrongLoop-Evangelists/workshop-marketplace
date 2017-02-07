@@ -16,7 +16,7 @@ LoopBack is a framework built on top of Express to rapidly build out RESTful API
 
 To initialize a Loopback application, you invoke the LoopBack application generator by typing `lb` and follow the prompts in the cli:
 
-[animated gif demo]()
+![LoopBack Initialization](https://github.com/StrongLoop-Evangelists/workshop-marketplace/raw/master/workplace-assets/lb.gif)
 
 let's go through, option by option.
 
