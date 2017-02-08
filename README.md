@@ -11,7 +11,8 @@ End Goal: build a marketplace application with products, users (buyers/sellers) 
 ## Steps
 
 - [Create a LoopBack application](workshop/00-initialization.md)
-- [First model based API](workshop/01-first-api.md)
+- [First model based API](workshop/01-first-model.md)
+- [API Explorer](workshop/02-api-explorer.md)
 
 ## What is LoopBack?
 
