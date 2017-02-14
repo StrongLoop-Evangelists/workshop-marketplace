@@ -47,6 +47,8 @@ In addition to providing some sample request examples (Curl and URL), we also se
 
 ![LoopBack API Explorer - POST method](assets/api-explorer06.png)
 
+If you scroll down the page of HTTP verbs, you will see a few POST options. The first one should be `POST /products`. Open that panel by clicking on it and it should look similar to the GET panel you saw above. We are going to 'Try it out!'. To do so, you can click on the text field with the yellow background in the Parameters section and doing so will populate the text field with the white background with example data. In the image above, I added edited the example data like so:
+
 ```json
 {
   "name": "Coffee Mug",
@@ -55,9 +57,14 @@ In addition to providing some sample request examples (Curl and URL), we also se
 }
 ```
 
+You may notice that I deleted the `id` key/value in the data. If you send an `id`, you may get an error because that field is managed by the data-source. After entering this data into the text field, we can click the 'Try it out!' button to POST this data to the endpoint.
 
+![LoopBack API Explorer - POST method response](assets/api-explorer07.png)
 
+You'll notice that we are successful: we get a `200` response and the response body includes the data we sent with an actual `id` returned. To verify the successful POST, let's go back to the GET request and "Try it out!"
 
+![LoopBack API Explorer - GET method with data](assets/api-explorer08.png)
 
+Yay! Again, we get the `200` response and this time, the GET request returns an array with the object we had POST-ed in the previous step. Exciting, right?
 
-## Save your data!
+WHATS NEXT?
