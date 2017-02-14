@@ -82,5 +82,5 @@ As I mentioned above, when we are done, we can simply hit enter when prompted fo
 
 Once you are done adding your properties, hit `<enter>` and the prompt will exit.
 
-**Next Step:** [API Explorer](02-api-explorer.md)
+**Next Step:** [Model files: config and hooks](02-model-files.md)
 
