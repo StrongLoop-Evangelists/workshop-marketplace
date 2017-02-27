@@ -28,6 +28,8 @@ These final object keys have empty values. We will get to how these work later i
 
 ## Model hooks
 
+`/models/common/product.js`
+
 ![LoopBack Model Files - product.js - js hooks](assets/files02.png)
 
 The generator also creates a corresponding JavaScript file to allow you to add remote methods to your endpoint. As you can see above, we have a simple function waiting to add in functionality.
