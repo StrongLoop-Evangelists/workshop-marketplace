@@ -81,4 +81,4 @@ Before we move on to exploring our API with the explorer user interface, let's m
 }
 ```
 
-**Next Step:** [API Explorer](03-api-explorer.md)
+**Next Step:** [API Explorer](04-api-explorer.md)
