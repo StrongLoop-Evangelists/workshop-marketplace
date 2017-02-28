@@ -33,7 +33,7 @@
     "public": false
   },
   "product": {
-    "dataSource": "db",
+    "dataSource": "ComposeMongo",
     "public": true
   }
 }

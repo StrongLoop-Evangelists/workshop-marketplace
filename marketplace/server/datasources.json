@@ -3,5 +3,15 @@
     "name": "db",
     "connector": "memory",
     "file": "db.json"
+  },
+  "ComposeMongo": {
+    "host": "",
+    "port": 0,
+    "url": "mongodb://productAdmin:loopback123@aws-us-east-1-portal.26.dblayer.com:17243,aws-us-east-1-portal.24.dblayer.com:17243/marketplaceDemo?ssl=true",
+    "database": "",
+    "password": "",
+    "name": "ComposeMongo",
+    "user": "",
+    "connector": "mongodb"
   }
 }
