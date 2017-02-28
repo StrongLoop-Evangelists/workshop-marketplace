@@ -23,8 +23,6 @@ _Note: your model should be singular. The application handles plural naturally, 
   (no data-source)
 ```
 
-![LoopBack Model - step 2 - select the data source](assets/lb-model-step02.png)
-
 It's important to point out here that, for rolling up something to get it working, the in-memory datasource is your best bet. However, thanks to [compose.io](https://compose.io), we've already linked up a simple MongoDB datasource for our products to be saved to. Let's use that one.
 
 _Note: an issue with using the in-memory data-source is that every time you shut down your application, you will lose all your data. Again, using the in-memory data-source is only for testing and prototyping._
