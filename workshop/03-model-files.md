@@ -6,7 +6,7 @@
 
 ![LoopBack Model Files - product.json](assets/files01.png)
 
-The `product.json` file is generated based from the answers we gave to the CLI in the previous step. What I find most impressive about LoopBack, especially from a new user's perspective, is that not only is the command line generator easy and quick to use, but the configuration file that is outputted (this `product.json` file) is very easy to understand.
+The `product.json` file is generated based from the answers we gave to the CLI in the previous step. One impressive thing about LoopBack, especially from a new user's perspective, is that not only is the command line generator easy and quick to use, but the configuration file that is outputted (this `product.json` file) is very easy to understand.
 
 #### Lines 2-7: let's call this meta data
 
@@ -18,13 +18,13 @@ I've commented in the file to make it easier to understand. These first few line
 
 ![LoopBack Model Files - product.json - properties](assets/files01b.png)
 
-The `properties` block is what was generated when we created our model based on the CLI prompts. This configuration block is maleable, so if you decide later that you want a property to be required and a default value provided, you can just edit this file. It is very easy to get into the configuration and make your needed changes.
+The `properties` block is what was generated when we created our model based on the CLI prompts. This configuration block is maleable, so if we decide later that we want a property to be required and a default value provided, we can just edit this file. It is very easy to get into the configuration and make our needed changes.
 
 #### Lines 21-25: additional options
 
 ![LoopBack Model Files - product.json - additional options](assets/files01c.png)
 
-These final object keys have empty values. We will get to how these work later in the workshop. I think you may find them named in obvious ways, but I have commented them as well to give a little more insight if needed.
+These final object keys have empty values. We will get to how these work later in the workshop. I think we may find them named in obvious ways, but I have commented them as well to give a little more insight if needed.
 
 ## Model hooks
 
@@ -32,7 +32,7 @@ These final object keys have empty values. We will get to how these work later i
 
 ![LoopBack Model Files - product.js - js hooks](assets/files02.png)
 
-The generator also creates a corresponding JavaScript file to allow you to add remote methods to your endpoint. As you can see above, we have a simple function waiting to add in functionality.
+The generator also creates a corresponding JavaScript file to allow us to add remote methods to our endpoint. As we can see above, we have a simple function waiting to add in functionality.
 
 Below is an example of a remote method from the LoopBack documentation that adds an endpoint called `status` that returns whether the coffee shop is open or closed based on the time.
 
@@ -67,9 +67,9 @@ module.exports = function(Review) {
 };
 ```
 
-## Save your data!
+## Save our data!
 
-Before we move on to exploring our API with the explorer user interface, let's make sure our data is saved to a file so we don't lose it each time we stop our application. You can do so by updating `server/datasources.json` to have the `file` key. My datasources.json looks like so:
+Before we move on to exploring our API with the explorer user interface, let's make sure our data is saved to a file so we don't lose it each time we stop our application. We can do so by updating `server/datasources.json` to have the `file` key. My datasources.json looks like so:
 
 ```json
 {

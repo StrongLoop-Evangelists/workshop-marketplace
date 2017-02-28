@@ -1,6 +1,6 @@
 ## Create a new LoopBack application
 
-You can do so by typing `lb` or `lb app` and this will invoke the generator.
+We can do so by typing `lb` or `lb app` and this will invoke the generator.
 
 The first step is to name the application.
 
@@ -35,9 +35,9 @@ The first step is to name the application.
 ? Enter name of the directory to contain the project: (workshop-marketplace)
 ```
 
-The next step is simply to choose the name of the directory that you are going to build out the application into. By default, it assumes you would like to create a directory with the same name as the application that you have given in the previous step. Hitting enter will do the default, but if you want to name your directory something else, you can do so here. You may have already created this directory name and are in it within the terminal, in which case, you can simply type `.` to denote the 'current directory'.
+The next step is simply to choose the name of the directory that we are going to build out the application into. By default, it assumes we would like to create a directory with the same name as the application that we have given in the previous step. Hitting enter will do the default, but if we want to name our directory something else, we can do so here. We may have already created this directory name and are in it within the terminal, in which case, we can simply type `.` to denote the 'current directory'.
 
-You'll notice in the next step that the prompt informs you that it created the directory and has navigated into that directory for building the application. Note that when completed, you will be in the same directory in which you started, which may be one level above your new working directory.
+We'll notice in the next step that the prompt informs us that it created the directory and has navigated into that directory for building the application. Note that when completed, we will be in the same directory in which we started, which may be one level above our new working directory.
 
 ### Which version of LoopBack would you like to use?
 
@@ -97,9 +97,9 @@ The user is presented with 4 options as starting points for scaffolding a LoopBa
 
 We will choose the default option as it is useful to have a built-in User model to extend from when building our model for our users.
 
-_Note: as alluded to above, it is discouraged to use the base model directly. Instead, you always should extend built-in models so they may be reused without adverse effects._
+_Note: as alluded to above, it is discouraged to use the base model directly. Instead, we always should extend built-in models so they may be reused without adverse effects._
 
-_Protip: in the command line, you can type `j` or `k` to navigate up or down._
+_Protip: in the command line, we can type `j` or `k` to navigate up or down._
 
 ### Scaffolding application and running `npm install`
 ```
@@ -138,11 +138,11 @@ I'm all done. Running npm install for you to install the required dependencies. 
    create client/README.md
 ```
 
-At this point, your application has been scaffolded and then the generator runs `npm install` to retrieve all of your external dependences. This may take a moment, depending on your internet connection. Do not be alarmed by the many modules that are installed. Node.js has a large ecosystem of many small modules, in an effort to reduce duplication of effort. NPM, the node package manager, handles these modules in a smart and efficient manner.
+At this point, our application has been scaffolded and then the generator runs `npm install` to retrieve all of our external dependences. This may take a moment, depending on our internet connection. Do not be alarmed by the many modules that are installed. Node.js has a large ecosystem of many small modules, in an effort to reduce duplication of effort. NPM, the node package manager, handles these modules in a smart and efficient manner.
 
-Once the installation of external modules is complete, you will see a listing of these modules in a tree structure.
+Once the installation of external modules is complete, we will see a listing of these modules in a tree structure.
 
-### Handy next steps for your convenience
+### Handy next steps for our convenience
 
 ```
 Next steps:
@@ -155,10 +155,10 @@ Next steps:
 
 The API Connect team at IBM happily continues to develop,
 support and maintain LoopBack, which is at the core of
-API Connect. When your APIs need robust management and
+API Connect. When our APIs need robust management and
 security options, please check out http://ibm.biz/tryAPIC
 ```
 
-At this point, your application foundation is ready. The terminal outputs some helpful next steps to continue development. The first being to `cd` (change directory) into the directory of your application. You are also given the command to create your first model which will be used to build the corresponding API. And you are also told how to run your application. Let's move along to the model/API step.
+At this point, our application foundation is ready. The terminal outputs some helpful next steps to continue development. The first being to `cd` (change directory) into the directory of our application. We are also given the command to create our first model which will be used to build the corresponding API. And we are also told how to run our application. Let's move along to the model/API step.
 
 **Next Step:** [Link a Datasource](01-link-datasource.md)

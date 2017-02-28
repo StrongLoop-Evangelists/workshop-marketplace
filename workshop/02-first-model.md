@@ -1,10 +1,10 @@
-# Create your first LoopBack model/API
+# Create our first LoopBack model/API
 
-LoopBack takes a model driven approach to building out APIs. Based on your responses to the command line prompts, it will create a JSON file with your model schema and details.
+LoopBack takes a model driven approach to building out APIs. Based on our responses to the command line prompts, it will create a JSON file with our model schema and details.
 
 To invoke the generator, we type `lb model` and go through the list of prompts.
 
-### Enter the name of your model
+### Enter the name of our model
 ```
 lb model
 ? Enter the model name:
@@ -12,7 +12,7 @@ lb model
 
 We'll call our first model while building our marketplace app `product`.
 
-_Note: your model should be singular. The application handles plural naturally, as you'll see in an upcoming step._
+_Note: our model should be singular. The application handles plural naturally, as we'll see in an upcoming step._
 
 ### Select the data-source
 ```
@@ -23,9 +23,9 @@ _Note: your model should be singular. The application handles plural naturally, 
   (no data-source)
 ```
 
-It's important to point out here that, for rolling up something to get it working, the in-memory datasource is your best bet. However, thanks to [compose.io](https://compose.io), we've already linked up a simple MongoDB datasource for our products to be saved to. Let's use that one.
+It's important to point out here that, for rolling up something to get it working, the in-memory datasource is our best bet. However, thanks to [compose.io](https://compose.io), we've already linked up a simple MongoDB datasource for our products to be saved to. Let's use that one.
 
-_Note: an issue with using the in-memory data-source is that every time you shut down your application, you will lose all your data. Again, using the in-memory data-source is only for testing and prototyping._
+_Note: an issue with using the in-memory data-source is that every time we shut down our application, we will lose all our data. Again, using the in-memory data-source is only for testing and prototyping._
 
 ### Select model's base class:
 ```
@@ -52,7 +52,7 @@ The base class for a model is the object that this model will extend from. There
 ? Expose product via the REST API? (Y/n)
 ```
 
-There may be reasons for keeping your endpoint private, but for the sake of this workshop, we will expose our REST API endpoints for public consumption. We will look at securing endpoints later in the workshop.
+There may be reasons for keeping our endpoint private, but for the sake of this workshop, we will expose our REST API endpoints for public consumption. We will look at securing endpoints later in the workshop.
 
 ### Custom plural form
 ```
@@ -63,7 +63,7 @@ There may be reasons for keeping your endpoint private, but for the sake of this
 ? Custom plural form (used to build REST URL):
 ```
 
-LoopBack is very smart about handling plural forms of your model. In this case, `product` is easily made plural as `products`, but it can also handle other common plurals such as `child` to `children` and `mouse` to `mice`. If you have an unconventional model name that isn't easily made plural by adding an `s` then you may need to take advantage of this feature. Most cases, we can let LoopBack do its magic.
+LoopBack is very smart about handling plural forms of our model. In this case, `product` is easily made plural as `products`, but it can also handle other common plurals such as `child` to `children` and `mouse` to `mice`. If we have an unconventional model name that isn't easily made plural by adding an `s` then we may need to take advantage of this feature. Most cases, we can let LoopBack do its magic.
 
 ### Common model or server only?
 ```
@@ -77,11 +77,11 @@ LoopBack is very smart about handling plural forms of your model. In this case, 
   server
 ```
 
-You can choose to only have this model available to the server or you can make it available to the client as well. In an effort to be forward thinking, we will choose `common` in case we want to use the Angular SDK or any other client options in the future.
+We can choose to only have this model available to the server or we can make it available to the client as well. In an effort to be forward thinking, we will choose `common` in case we want to use the Angular SDK or any other client options in the future.
 
 ## Let's add some properties now!
 
-Now that we have our model config in place, we will move on to specific model properties. The prompts will guide us, and as you'll see, after your last property is captured, you can hit enter and it will exit the prompt.
+Now that we have our model config in place, we will move on to specific model properties. The prompts will guide us, and as we'll see, after our last property is captured, we can hit enter and it will exit the prompt.
 
 ### Model property: name
 
@@ -124,7 +124,7 @@ Enter an empty property name when done.
 (Move up and down to reveal more choices)
 ```
 
-The type of our `name` property will be `string` in this case, but as you can see, there are many options. Having the type set for our properties is important when doing validation, which we will visit later.
+The type of our `name` property will be `string` in this case, but as we can see, there are many options. Having the type set for our properties is important when doing validation, which we will visit later.
 
 ### Model property: required
 ```
@@ -187,7 +187,7 @@ Enter an empty property name when done.
 ? Property name:
 ```
 
-As I mentioned above, when we are done, we can simply hit enter when prompted for another property. In this case, though, we are going to add a `description` and a `price`. See the details for all three properties below:
+As we mentioned above, when we are done, we can simply hit enter when prompted for another property. In this case, though, we are going to add a `description` and a `price`. See the details for all three properties below:
 
 ```
 ? Enter the model name: product
@@ -221,7 +221,7 @@ Enter an empty property name when done.
 ? Required? Yes
 ? Default value[leave blank for none]:
 
-Once you are done adding your properties, hit `<enter>` and the prompt will exit.
+Once we are done adding our properties, hit `<enter>` and the prompt will exit.
 
 **Next Step:** [Model files: config and hooks](03-model-files.md)
 
